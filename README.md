@@ -6,7 +6,7 @@ ___
 
 ## 📄 Identitas Mahasiswa
 
-- **👤 Nama** : Bayu TriWicaksono  
+- **👤 Nama** : Bayu Tri Wicaksono  
 - **🆔 NIM** : 312310407  
 - **🏫 Kelas** : TI.23.A4  
 - **📘 Mata Kuliah** : Pemrograman Web 2 (Praktikum)
