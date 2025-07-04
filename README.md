@@ -1,3 +1,5 @@
+___
+
 # 🧑‍🎓 UAS Pemrograman Web 2 (Praktikum)
 
 > Repository ini dibuat untuk memenuhi tugas UAS mata kuliah **Pemrograman Web 2 (Praktikum)**.
@@ -8,6 +10,8 @@
 - **🆔 NIM** : 312310407  
 - **🏫 Kelas** : TI.23.A4  
 - **📘 Mata Kuliah** : Pemrograman Web 2 (Praktikum)
+
+___
 
 🚀 Apa itu CodeIgniter 4?
 CodeIgniter 4 adalah versi terbaru dari framework PHP yang ringan, cepat, dan powerful. Framework ini dirancang khusus untuk pengembangan aplikasi web berbasis MVC (Model-View-Controller) dengan performa tinggi dan struktur yang bersih.
