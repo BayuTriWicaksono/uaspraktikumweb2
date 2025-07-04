@@ -14,9 +14,11 @@ ___
 ___
 
 🚀 Apa itu CodeIgniter 4?
+
 CodeIgniter 4 adalah versi terbaru dari framework PHP yang ringan, cepat, dan powerful. Framework ini dirancang khusus untuk pengembangan aplikasi web berbasis MVC (Model-View-Controller) dengan performa tinggi dan struktur yang bersih.
 
 🧠 Fitur Utama CodeIgniter 4
+
 Fitur	Penjelasan
 ✅ MVC Architecture	Memisahkan logika aplikasi (Model), tampilan (View), dan kontrol (Controller)
 🚀 Performa Tinggi	Ringan, cepat diproses bahkan pada shared hosting
