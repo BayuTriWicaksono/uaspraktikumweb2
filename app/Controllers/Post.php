@@ -36,7 +36,7 @@ class Post extends ResourceController
         $data = [
             'judul' => $this->request->getVar('judul'),
             'isi' => $this->request->getVar('isi'),
-            'status' => $this->request->getVar('status') // <<< tambahkan ini
+            'status' => $this->request->getVar('status') 
         ];
         $model->insert($data);
         $response = [
@@ -50,6 +50,8 @@ class Post extends ResourceController
     }
 
 
+
+
     // PUT: /post/{id}
     public function update($id = null)
     {
@@ -57,7 +59,7 @@ class Post extends ResourceController
         $data = [
             'judul' => $this->request->getVar('judul'),
             'isi' => $this->request->getVar('isi'),
-            'status' => $this->request->getVar('status') // <<< tambahkan ini juga
+            'status' => $this->request->getVar('status') 
         ];
         $model->update($id, $data);
         $response = [

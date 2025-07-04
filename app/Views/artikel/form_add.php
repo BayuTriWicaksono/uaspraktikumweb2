@@ -2,20 +2,23 @@
 
 <h2><?= $title; ?></h2>
 
-<?php if (session()->getFlashdata('errors')) : ?>
+<?php if (session()->getFlashdata('errors')): ?>
     <div style="color:red; margin-bottom:10px;">
         <ul>
-            <?php foreach (session()->getFlashdata('errors') as $error) : ?>
+            <?php foreach (session()->getFlashdata('errors') as $error): ?>
                 <li><?= esc($error) ?></li>
             <?php endforeach ?>
         </ul>
     </div>
 <?php endif ?>
 
+
 <form action="<?= base_url('/admin/artikel/add') ?>" method="post" enctype="multipart/form-data">
+    <?= csrf_field() ?>
     <p>
-        <label>Judul</label>
-        <input type="text" name="judul" required>
+        <label for="judul">Judul</label>
+        <input type="text" name="judul" id="judul" required>
+
     </p>
     <p>
         <label>Isi</label>
@@ -31,7 +34,7 @@
     <p>
         <label>Kategori</label>
         <select name="id_kategori" required>
-            <?php foreach($kategori as $k): ?>
+            <?php foreach ($kategori as $k): ?>
                 <option value="<?= $k['id_kategori']; ?>"><?= $k['nama_kategori']; ?></option>
             <?php endforeach; ?>
         </select>

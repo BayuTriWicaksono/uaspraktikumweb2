@@ -36,7 +36,7 @@ class Filters extends BaseFilters
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
         'auth'          => \App\Filters\Auth::class,
-
+        'cors'          => \App\Filters\CorsFilter::class,
     ];
 
     /**
@@ -72,6 +72,7 @@ class Filters extends BaseFilters
      */
     public array $globals = [
         'before' => [
+            'cors',
             // 'honeypot',
             // 'csrf',
             // 'invalidchars',
