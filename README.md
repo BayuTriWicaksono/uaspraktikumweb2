@@ -1,60 +1,74 @@
-# CodeIgniter 4 Framework
+# 🧑‍🎓 UAS Pemrograman Web 2 (Praktikum)
 
-## What is CodeIgniter?
+> Repository ini dibuat untuk memenuhi tugas UAS mata kuliah **Pemrograman Web 2 (Praktikum)**.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## 📄 Identitas Mahasiswa
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+- **👤 Nama** : Bayu TriWicaksono  
+- **🆔 NIM** : 312310407  
+- **🏫 Kelas** : TI.23.A4  
+- **📘 Mata Kuliah** : Pemrograman Web 2 (Praktikum)
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+🚀 Apa itu CodeIgniter 4?
+CodeIgniter 4 adalah versi terbaru dari framework PHP yang ringan, cepat, dan powerful. Framework ini dirancang khusus untuk pengembangan aplikasi web berbasis MVC (Model-View-Controller) dengan performa tinggi dan struktur yang bersih.
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+🧠 Fitur Utama CodeIgniter 4
+Fitur	Penjelasan
+✅ MVC Architecture	Memisahkan logika aplikasi (Model), tampilan (View), dan kontrol (Controller)
+🚀 Performa Tinggi	Ringan, cepat diproses bahkan pada shared hosting
+🔐 Keamanan Lengkap	XSS filtering, CSRF protection, Content Security Policy, dan lainnya
+🧪 Testing Support	Terintegrasi dengan PHPUnit untuk unit testing
+📁 Routing yang Fleksibel	Mendukung auto-routing dan routing manual
+🗂️ Modular Structure	Memudahkan pengembangan aplikasi besar dengan struktur folder modular
+🌐 RESTful API Ready	Mudah digunakan untuk membangun API
+🔧 Configuration File-Based	Semua konfigurasi bisa disesuaikan melalui file
 
-## Important Change with index.php
+🧱 Arsitektur MVC di CodeIgniter 4
+Model
+Berfungsi sebagai penghubung antara aplikasi dan database. Berisi logika data (insert, update, delete, dll).
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+View
+Bagian yang ditampilkan ke pengguna. Biasanya berupa file HTML/CSS/JS dengan data dari controller.
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+Controller
+Pengatur alur logika antara Model dan View. Menerima input dari user, memproses, dan menampilkan output.
 
-**Please** read the user guide for a better explanation of how CI4 works!
+🚧 Cara Kerja Sederhana CodeIgniter 4
+Pengguna mengakses URL https://domain.com/home
 
-## Repository Management
+Routing akan meneruskan ke HomeController
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+HomeController memanggil data dari Model
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+Data dikirim ke View
 
-## Contributing
+View ditampilkan ke browser pengguna
 
-We welcome contributions from the community.
+🧰 Tools dan Fitur Tambahan
+CLI Tool (php spark)
+Digunakan untuk membuat controller, model, migration, dll via command line.
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+Contoh:
 
-## Server Requirements
+bash
+Copy
+Edit
+php spark make:controller Home
+php spark serve
+Environment Management
+Menggunakan file .env untuk menyimpan konfigurasi berdasarkan environment (dev, prod, testing).
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+Built-in Validation
+Validasi input user bisa dilakukan langsung di controller.
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+📌 Kelebihan CodeIgniter 4
+Lebih modern dan sesuai standar PHP 7.4+ hingga 8.x
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
+Dokumentasi lengkap dan komunitas aktif
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+Mudah dipelajari untuk pemula
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+Cocok untuk proyek kecil hingga menengah
+
+🔚 Kesimpulan
+CodeIgniter 4 adalah pilihan framework PHP yang cocok bagi mahasiswa, pemula, maupun developer profesional. Dengan struktur yang rapi, dokumentasi lengkap, dan fitur yang powerful, CodeIgniter 4 memudahkan pembuatan aplikasi web yang efisien dan aman.
